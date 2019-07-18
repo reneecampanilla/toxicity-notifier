@@ -17,5 +17,6 @@
   "options_ui": {
     "page": "options/options.html",
     "chrome_style": true
-  }
+  },
+  "permissions": ["http://www.google.com/", "https://www.google.com/", "https://storage.googleapis.com/*"]
 }
