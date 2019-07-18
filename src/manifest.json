@@ -1,11 +1,11 @@
 {
-  "name": "Messenger Notifier",
-  "description": "A Chrome extension that notifies you for new messages in Facebook.",
+  "name": "Toxicity Notifier",
+  "description": "A chrome extension that detects toxicity level of posts in your newsfeed.",
   "version": "0.1.0",
   "manifest_version": 2,
   "icons": {
-    "48": "icons/logo.png",
-    "128": "icons/logo.png"
+    "48": "icons/poison.png",
+    "128": "icons/poison.png"
   },
   "browser_action": {
     "default_title": "extension",

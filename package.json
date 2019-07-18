@@ -1,7 +1,7 @@
 {
   "name": "extension",
   "version": "1.0.0",
-  "description": "A chrome extension",
+  "description": "A chrome extension that detects toxicity level of posts in your newsfeed.",
   "author": "Renee Campanilla <renee.campanilla@gmail.com>",
   "license": "GNU GENERAL PUBLIC LICENSE",
   "scripts": {
