@@ -48,7 +48,7 @@ const config = {
         test: /\.(png|jpg|gif|svg|ico)$/,
         loader: 'file-loader',
         options: {
-          name: '[path][name].[ext]?[hash]',
+          name: '[name].[ext]',
         },
       },
     ],
