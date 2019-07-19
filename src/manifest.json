@@ -18,6 +18,13 @@
     "page": "options/options.html",
     "chrome_style": true
   },
-  "permissions": ["http://www.google.com/", "https://www.google.com/", "https://storage.googleapis.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.facebook.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "permissions": ["activeTab", "storage", "http://www.google.com/", "https://www.google.com/", "https://storage.googleapis.com/*", "https://www.facebook.com/*"],
   "web_accessible_resources": ["*.png", "*.PNG"]
 }

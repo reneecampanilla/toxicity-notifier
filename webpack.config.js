@@ -10,9 +10,10 @@ const config = {
   mode: process.env.NODE_ENV,
   context: __dirname + '/src',
   entry: {
-    background: './background.js',
+    background: './background/background.js',
     'popup/popup': './popup/popup.js',
     'options/options': './options/options.js',
+    content: './content-script/content.js',
   },
   output: {
     path: __dirname + '/dist',
@@ -64,7 +65,9 @@ const config = {
     new CopyWebpackPlugin([
       { from: 'icons', to: 'icons', ignore: ['icon.xcf'] },
       { from: 'popup/popup.html', to: 'popup/popup.html', transform: transformHtml },
+      { from: 'content-script', to: 'content-script' },
       { from: 'options/options.html', to: 'options/options.html', transform: transformHtml },
+      { from: 'background', to: 'background' },
       {
         from: 'manifest.json',
         to: 'manifest.json',
